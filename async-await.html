@@ -1,0 +1,19 @@
+<html>
+    <script>
+        /*
+            Prepending the async keyword to any function 
+            means that the function will return a promise.
+        */
+        const aFunction = async () => {
+            return 'test a'
+        }
+        aFunction().then(alert)
+
+        const bFunction = async () => {
+            return Promise.resolve('test b')
+        }
+        bFunction().then(alert)
+
+
+    </script>
+</html>
