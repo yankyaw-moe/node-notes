@@ -40,12 +40,12 @@ console.log('after')
 const aFunction = async () => {
     return 'test a'
 }
-aFunction().then(res => console.log(res))
+aFunction().then(res => console.log(res)) // test a
 
 const bFunction = async () => {
     return Promise.resolve('test b')
 }
-bFunction().then(res => console.log(res))
+bFunction().then(res => console.log(res)) // test b
 
 
 /*
