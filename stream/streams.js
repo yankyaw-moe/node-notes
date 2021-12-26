@@ -12,7 +12,7 @@ const fs = require("fs");
 //### alternative way by using streams
 
 const server = http.createServer((req, res) => {
-  const stream = fs.createReadStream(__dirname + "/file2.txt");
+  const stream = fs.createReadStream(__dirname + "/notes.txt");
   stream.pipe(res);
 });
 
